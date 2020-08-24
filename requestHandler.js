@@ -29,9 +29,8 @@ module.exports = function requestHandler(request, response) {
 
   const reqParams = {
     company: "choiceandpoint",
-    access_key: "choiceandpoint-7G8*zMr#",
-    access_password:
-      "SsK3k71FZ&F7VE&mzKDGZl7#BVG@BqTGQOb7UI^f9Fu8Vx@^EDIKjG%b7aQR6B^Y",
+    access_key: process.env.KEY,
+    access_password: process.env.PASS,
     version: "1.1",
   };
 
