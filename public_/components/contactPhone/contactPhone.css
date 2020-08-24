@@ -1,0 +1,40 @@
+.contact-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  color: #fff;
+  z-index: 15;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contact-phone__inner {
+  background-color: turquoise;
+}
+
+.phone-logo {
+  width: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-phone:hover .phone-logo {
+  transform: rotate(90deg);
+}
+
+.contact-phone__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.contact-phone {
+  left: 80px;
+  background-color: rgba(64, 224, 208, 0.2);
+}

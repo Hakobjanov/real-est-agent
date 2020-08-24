@@ -1,0 +1,89 @@
+/*global styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.glass {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0005;
+}
+
+.rental {
+  background-image: url(../images/apartment-architecture-balcony-buildings-280212.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.apartment-search {
+  background-color: rgba(255, 255, 255, 0.192);
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.rental-title {
+  color: #fff;
+}
+
+.search-form {
+}
+
+.rooms-title,
+.rooms-wrap label {
+  color: #fff;
+}
+
+.cards {
+  margin-top: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;
+  border: 1px solid #000;
+  margin: 25px;
+  text-align: center;
+}

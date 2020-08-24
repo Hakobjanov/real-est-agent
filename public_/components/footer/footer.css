@@ -1,0 +1,211 @@
+/*footer*/
+.footer {
+  display: flex;
+  margin-top: 50px;
+  padding: 50px 100px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  opacity: 0.65;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-logo-icon {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  list-style-type: none;
+  color: #fee988;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-logo-icon .logo-sub {
+  margin: -8px 0 0 118px;
+  border-bottom: none;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.footer-phone,
+.footer-mail {
+  margin-bottom: 15px;
+}
+
+.footer-phone-link,
+.footer-mail-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.footer-phone-link:hover,
+.footer-mail-link:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -10px;
+}
+
+.footer-social-icon__link {
+  opacity: 0.65;
+  margin: 10px;
+}
+
+.footer-social-icon__link:hover {
+  opacity: 1;
+}
+
+.footer-social-icon__link img {
+  width: 40px;
+  transition: all 0.2s ease-in-out;
+}
+.footer-social-icon__link:hover img {
+  transform: scale(1.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 400px;
+}
+
+.form-title {
+  font-family: "PT Serif Caption", serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-title h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-item label {
+  font-family: "PT Serif Caption", serif;
+  color: #2c2c2c;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.form-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.massage-form textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #212121;
+  font-style: normal;
+  font-weight: normal;
+  height: 80px;
+  resize: none;
+  outline: none;
+  padding: 5px 20px 6px 10px;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+textarea:focus {
+  border: 2px solid #fee988;
+}
+
+.form-item input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #a6a6a6;
+  font-style: normal;
+  font-weight: normal;
+}
+
+input[type="text"] {
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1.6rem;
+  color: #212121;
+  font-style: normal;
+  font-weight: normal;
+  padding-left: 10px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+.subject-form select:focus,
+.select2-container--default .select2-selection--single:focus {
+  border: 2px solid #fee988;
+}
+
+.name-form,
+.phone-form,
+.massage-form {
+  margin: 5px 0;
+}
+
+.sendBtn {
+  margin: 5px 0;
+}
+
+.send {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fee988;
+  opacity: 0.65;
+  transition: all 0.2s ease-in-out;
+}
+
+.send:hover {
+  opacity: 1;
+}

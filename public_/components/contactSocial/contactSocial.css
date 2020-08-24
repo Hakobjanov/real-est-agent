@@ -1,0 +1,81 @@
+.social-icons {
+  list-style: none;
+}
+
+.contact-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  color: #fff;
+  z-index: 15;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contact-social:hover .social-logo {
+  transform: scale(1.25);
+}
+
+.contact-social__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.contact-social {
+  right: 80px;
+  background-color: rgba(254, 233, 136, 0.2);
+}
+
+.social-icons {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  right: 80px;
+  background-color: rgba(254, 233, 136, 0.2);
+  border-radius: 50px;
+  z-index: -1;
+
+  opacity: 0;
+  pointer-events: none;
+  padding: 0 100px 0 20px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-social:hover .social-icons {
+  opacity: 1;
+  pointer-events: all;
+  transform: scaleX(1);
+}
+
+.social-icon {
+  padding: 30px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.5);
+  opacity: 0.8;
+}
+
+.social-icon img {
+  width: 35px;
+}
+
+.contact-social__inner {
+  background-color: #fee988;
+}
+
+.social-logo {
+  width: 30px;
+  transition: all 0.3s ease-in-out;
+}

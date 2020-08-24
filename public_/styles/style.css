@@ -1,0 +1,203 @@
+/*global styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/*main page styles*/
+.main {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-top {
+  display: flex;
+  position: absolute;
+}
+
+.main-slides {
+  position: relative;
+
+  width: 33.33%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear, transform 0.2s linear;
+}
+
+.backdrop {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0004;
+  transition: all 0.3s ease-in-out;
+}
+
+.backdrop:hover {
+  background-color: #0007;
+}
+
+.main-slides:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+}
+
+.slide-one {
+  background-image: url(../images/abstract-architectural-design-architecture-building-136419.jpg);
+}
+.slide-two {
+  background-image: url(../images/interior-design-of-a-house-1571460.jpg);
+}
+
+.slide-three {
+  background-image: url(../images/apartment-architecture-balcony-buildings-280212.jpg);
+}
+
+.main-slides__title {
+  font-family: "PT Serif Caption", serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-bottom: -70px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-slides:hover .main-slides__title {
+  transform: translateY(-80px);
+}
+
+.main-slides__more-info {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+
+  color: #fff;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.main-slides:hover .main-slides__more-info {
+  transform: scaleY(1);
+}
+
+/*form slider and blog section*/
+
+.form-blog {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  margin-top: 50px;
+}
+
+.info-slider {
+  width: 100%;
+}
+
+.info-text {
+  margin-left: 1px;
+  width: 40%;
+  border: 1px solid seagreen;
+  background-color: rgb(177, 120, 230);
+}
+
+.slider-item img {
+  background-color: rgb(139, 48, 224);
+}
+
+.flip-items {
+  width: 100%;
+}
+.flipster__nav {
+  margin: 0;
+}
+
+.slider-item {
+  position: relative;
+  height: 40vh;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.slider-item-content {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 15%;
+}
+
+/* .slider-item-1 {
+  background-color: sandybrown;
+} 
+.slider-item-2 {
+  background-color: seagreen;
+}
+.slider-item-3 {
+  background-color: paleturquoise;
+}*/
+
+.flipster--carousel .flipster__item__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipster--carousel .flipster__item--current .flipster__item__contentХ {
+  width: 700px;
+}
+
+.social {
+  border: 1px solid #000;
+  background-color: rgba(169, 172, 27, 0.493);
+}
+
+.info {
+  width: 100%;
+  height: 50vh;
+  border: 1px solid #000;
+  margin-top: 3px;
+  background: indianred;
+}
+
+/*animations*/
+@keyframes bounce {
+  form {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-35%);
+    transform: translateY(-35%);
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../plugins/select/select.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../components/logo/logoStyle.css" />
+    <link rel="stylesheet" href="../components/burgerMenu/style.css" />
+    <link rel="stylesheet" href="../components/contactPhone/contactPhone.css" />
+    <link
+      rel="stylesheet"
+      href="../components/contactSocial/contactSocial.css"
+    />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+
+    <script src="../plugins/select/select.js"></script>
+    <script src="../components/logo/logo.js" defer></script>
+    <script src="../components/burgerMenu/burgerMenu.js" defer></script>
+    <script src="../components/contactPhone/contactPhone.js" defer></script>
+    <script src="../components/contactSocial/contactSocial.js" defer></script>
+    <script src="../components/footer/footer.js" defer></script>
+    <script src="./rental.js" defer></script>
+
+    <title>Rental</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="rental">
+        <div class="glass">
+          <div class="apartment-search">
+            <h1 class="rental-title">
+              Search form for rental apartments
+            </h1>
+          </div>
+
+          <form class="search-form">
+            <div class="select-app">
+              <div class="select-wrap">
+                <div id="district-select"></div>
+              </div>
+            </div>
+            <div class="street-select-wrap">
+              <input class="street-input" type="text" placeholder="street" />
+            </div>
+            <div class="rooms-wrap">
+              <h3 class="rooms-title">
+                Rooms quantity
+              </h3>
+              <label class="checkbox-container"
+                >1
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="room-quantity"
+                  value="1"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="checkbox-container"
+                >2
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="room-quantity"
+                  value="2"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="checkbox-container"
+                >3
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="room-quantity"
+                  value="3"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="checkbox-container"
+                >4
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="room-quantity"
+                  value="4"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="checkbox-container"
+                >5
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="room-quantity"
+                  value="5"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </form>
+          <button type="submit" id="search-btn" class="search-btn">
+            Search
+          </button>
+          <button type="submit" class="clear-btn">Clear</button>
+        </div>
+      </div>
+    </section>
+
+    <ul class="cards"></ul>
+  </body>
+</html>
